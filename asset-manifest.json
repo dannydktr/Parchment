@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Parchment/static/css/main.865f7bb1.css",
+    "main.js": "/Parchment/static/js/main.495b6507.js",
+    "static/js/787.95e85fcb.chunk.js": "/Parchment/static/js/787.95e85fcb.chunk.js",
+    "index.html": "/Parchment/index.html",
+    "main.865f7bb1.css.map": "/Parchment/static/css/main.865f7bb1.css.map",
+    "main.495b6507.js.map": "/Parchment/static/js/main.495b6507.js.map",
+    "787.95e85fcb.chunk.js.map": "/Parchment/static/js/787.95e85fcb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.865f7bb1.css",
+    "static/js/main.495b6507.js"
+  ]
+}
