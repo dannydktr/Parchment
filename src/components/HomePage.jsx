@@ -346,7 +346,7 @@ export default function HomePage(props) {
                     ))}
 
                     <MapNote
-                      title="Forest Encampment"
+                      title="Forest Camp"
                       src="https://cdn.shopify.com/s/files/1/0585/4239/1348/products/ForestEncampment_digital_day_grid.jpg?v=1676584019"
                       edit_funct={handleMapUpdate}
                     />

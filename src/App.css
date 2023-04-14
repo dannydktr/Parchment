@@ -98,7 +98,7 @@ input {
   width: 100%;
   display: block;
   align-items: center;
-  padding: 4% 0 4% 0;
+  padding: 6% 0 6% 0;
   background-color: #283b32;
 }
 
@@ -107,7 +107,7 @@ input {
   display: inline;
   width: 80%;
   height: 100%;
-  padding-bottom: 4%;
+  padding-bottom: 10.5%;
   float: right;
 }
 
@@ -229,7 +229,7 @@ input {
 
 .singular_note {
   display: inline-block;
-  width: 30%;
+  width: 32%;
   height: 30%;
   margin: 5px;
 }
@@ -242,6 +242,7 @@ input {
   display: inline;
   float: left;
   width: 70%;
+  justify-content: center;
 }
 
 .title_input {
@@ -287,6 +288,13 @@ input {
 }
 
 /* ------------------------------------------------------------- */
+/* IMAGE EDIT PAGE: EDIT SECTION */
+
+.full_img {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------- */
 /* MAP EDIT PAGE: EDIT SECTION */
 
 .map {
@@ -308,8 +316,6 @@ td {
 tr {
   height: 47px;
 }
-
-
 
 /* ------------------------------------------------------------- */
 /* COMPONENT: NOTE */
@@ -333,6 +339,12 @@ tr {
 
 .body_section {
   background-color: #eeeaea;
+}
+
+.body_image {
+  /* padding: 15px; */
+  height: 180px;
+  overflow-y: scroll;
 }
 
 .textbox {

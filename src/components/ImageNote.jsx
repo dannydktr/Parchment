@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { storage } from "./config.jsx";
 import { ref as storageRef, uploadBytes, listAll, getDownloadURL, deleteObject, updateMetadata, uploadBytesResumable, getMetadata } from "firebase/storage";
+import SettingList from "./SettingList.jsx";
+
+
 function ImageNote(props) {
 
 	const edit_funct = props.edit_funct;
 	const [title, setTitle] = useState('');
-
-
 
 	useEffect(() => {
 		const imageRef = storageRef(storage, props.src);
@@ -27,9 +28,7 @@ function ImageNote(props) {
 					<button className="save_btn" onClick={edit_funct}>
 						Edit
 					</button>
-					<button className="pin_btn"
-					// onClick={() => togglePin(props.note_info.is_pinned)}
-					>
+					<button className="pin_btn">
 						Pin
 					</button>
 				</div>

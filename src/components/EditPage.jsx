@@ -59,16 +59,23 @@ const EditPage = ({ note_info }) => {
         <div className="title_input_box">
           <textarea className='title_input' rows='1' placeholder='Set Title' value={title} onChange={(e) => setTitle(e.target.value)}>
           </textarea>
-          {/* <Tooltip title="Pin"> */}
-            <button className='edit_page_btns'>Pin</button>
-          {/* </Tooltip> */}
-
+          <button className='edit_page_btns'>
+            Pin
+          </button>
         </div>
         <div className="tag_box">
-          <button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter}> Character </button>
-          <button className={`edit_page_btns ${lore ? 'selected btn' : 'unselected btn'}`} onClick={handleLore}> Lore </button>
-          <button className={`edit_page_btns ${map ? 'selected btn' : 'unselected btn'}`} onClick={handleMap}> Map </button>
-          <button className='edit_page_btns' onClick={handleAddTags}>Save Tags</button>
+          <button className={`edit_page_btns ${character ? 'selected btn' : 'unselected btn'}`} onClick={handleCharacter}>
+            Character
+          </button>
+          <button className={`edit_page_btns ${lore ? 'selected btn' : 'unselected btn'}`} onClick={handleLore}>
+            Lore
+          </button>
+          <button className={`edit_page_btns ${map ? 'selected btn' : 'unselected btn'}`} onClick={handleMap}>
+            Map
+          </button>
+          <button className='edit_page_btns' onClick={handleAddTags}>
+            Save Tags
+          </button>
 
         </div>
       </div>
