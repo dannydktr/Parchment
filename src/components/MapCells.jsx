@@ -1,1073 +1,660 @@
+import { useState } from "react";
+import MapButton from "./MapButton";
+
 function MapCells() {
   return (
     <>
       <table>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
         <tr>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
+            <MapButton>.</MapButton>
           </th>
           <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
+            <MapButton>.</MapButton>
           </th>
         </tr>
-        <tr>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-        </tr>
-        <tr>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-          <th>
-            .
-          </th>
-        </tr>
-
       </table>
     </>
   )

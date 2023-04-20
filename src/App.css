@@ -307,14 +307,30 @@ input {
 
 table {
   width: 100%;
+  border: solid black 1px;
 }
 
 td {
   height: auto;
+  border: solid black 1px;
 }
 
 tr {
-  height: 47px;
+  height: 61px;
+  border: solid black 1px;
+}
+
+th {
+  border: solid black 1px;
+  margin: 0;
+}
+
+.map_cell {
+  border: none;
+  border-radius: 17.5px;
+  height: 35px;
+  width: 35px;
+  padding: 1%;
 }
 
 /* ------------------------------------------------------------- */
@@ -330,7 +346,7 @@ tr {
   align-items: center;
   font-size: 150%;
   padding: 10px;
-  width: 70%;
+  width: 85%;
 }
 
 .pin_btn {
@@ -384,4 +400,5 @@ tr {
   flex-grow: 1;
   border: 0.5px solid grey;
   height: 25px;
+  cursor: pointer;
 }
