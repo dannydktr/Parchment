@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react'
 import { uid } from 'uid';
 import { auth, database } from "./config.jsx";
 import { set, ref, onValue, remove, update } from "firebase/database";
-// import Tooltip from '@mui/material/Tooltip';
+
+import trash from "../images/trash.svg";
 
 const EditPage = ({ note_info }) => {
 
@@ -38,6 +39,7 @@ const EditPage = ({ note_info }) => {
       content: note,
       cur_uid: note_info.cur_uid,
     });
+    handleAddTags();
     alert('Updating Note!', note)
   }
 
@@ -70,19 +72,20 @@ const EditPage = ({ note_info }) => {
           <button className={`edit_page_btns ${map ? 'selected btn' : 'unselected btn'}`} onClick={handleMap} title="Map Tag">
             Map
           </button>
-          <button className='edit_page_btns' onClick={handleAddTags} title="Save Tags">
-            Save Tags
-          </button>
 
         </div>
       </div>
       <div>
         <textarea className='note_input' placeholder="Put text here..." rows='15' value={note} onChange={(e) => { setNote(e.target.value) }}>
         </textarea>
-        <button onClick={() => { updateNote(); }}> Save Changes </button>
+        <button className="edit_save_btn" onClick={() => { updateNote(); }}> Save Changes </button>
       </div>
       <div>
-        <button onClick={handleDelete} title="Delete">Trash</button>
+        <button className="trash_edit_btn img_btn"
+          onClick={handleDelete}
+          title="Delete">
+          <img className="btn_img" src={trash} />
+        </button>
       </div>
     </div>
   )

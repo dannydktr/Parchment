@@ -11,6 +11,7 @@ body,
   margin: 0;
   padding: 0;
   background-color: #eeeaea;
+  padding-bottom: 2%;
 }
 
 button {
@@ -29,9 +30,21 @@ button {
 }
 
 .login_img {
-  margin: 0 auto; 
+  margin: 0 auto;
   height: 80px;
   width: 120px;
+}
+
+.login_header {
+  background-color: #588157;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font: white;
+  display: block;
+  margin: 0 auto;
+  padding: 1%;
+  width: 302px;
 }
 
 .login_box {
@@ -43,6 +56,53 @@ button {
   width: 300px;
 }
 
+.login {
+  padding: 2%;
+}
+
+.info {
+  display: flex;
+  background-image: url(./images/forest.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: 2% 5% 2% 5%;
+}
+
+.info_box {
+  background-color: white;
+  border: lightgray 1px solid;
+  float: left;
+  padding: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.info_character {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 22%;
+  padding: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 7.5%;
+}
+
+.info_prop {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 5%;
+  padding: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.page_doll {
+  width: 100%;
+}
+
 
 /* ------------------------------------------------------------- */
 
@@ -52,6 +112,12 @@ button {
   background-color: white;
   border-radius: 5px;
   margin: 2%;
+  justify-content: center;
+}
+
+.center_box {
+  justify-content: center;
+  align-content: center;
 }
 
 .notes {
@@ -107,15 +173,38 @@ input {
   display: inline;
   width: 80%;
   height: 100%;
-  padding-bottom: 10.5%;
+  padding-bottom: 5%;
   float: right;
 }
 
 .home_box {
   border: lightgray 1px solid;
-  margin: 1%;
+  background-color: #f5f2f0;
+  margin-top: 1%;
+  margin-bottom: 1%;
   padding: 1%;
   float: center;
+  text-align: center;
+}
+
+.img_btn {
+  background-color: #00000000;
+  justify-content: center;
+  justify-self: center;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.small_img_btn {
+  background-color: #00000000;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.btn_img {
+  width: 100%;
 }
 
 /* ------------------------------------------------------------- */
@@ -156,8 +245,7 @@ input {
 
 .search_btn {
   /* float: right; */
-  margin: 0 .5% .5% .5%;
-  padding: .5%;
+  margin: 0 0 0 .5%;
 }
 
 
@@ -168,13 +256,12 @@ input {
 .subheader {
   border: none;
   margin: 0;
-  /* padding: 2%; */
   background-color: #588157;
 }
 
 .subheader_btns_box {
   display: flex;
-  padding: .5%;
+  padding: .5% 1.5% .5% 1.5%;
 }
 
 .note_editor_btn {
@@ -193,7 +280,7 @@ input {
   border: none;
   margin: 0;
   padding: 2%;
-} 
+}
 
 .side_user_btns_box {
   margin: 10px;
@@ -223,13 +310,12 @@ input {
 .logout {
   margin: 4%;
   padding: 5px 10px;
-  font-weight: bold;
   float: left;
 }
 
 .singular_note {
   display: inline-block;
-  width: 32%;
+  width: 365px;
   height: 30%;
   margin: 5px;
 }
@@ -268,10 +354,26 @@ input {
   float: right;
 }
 
+.edit_save_btn {
+  margin: .5%;
+  padding: 1%;
+
+  background-color: #588157;
+  color: white;
+  font-weight: bold;
+
+  border-radius: 7px;
+  border: 1px #283b32 solid;
+  
+  float: right;
+  justify-content: center;
+}
+
 .note_input {
   width: 98%;
   padding: 10px;
   resize: vertical;
+  margin-bottom: 2%;
 }
 
 .btn {
@@ -300,8 +402,6 @@ input {
 .map {
   display: flex;
   width: 100%;
-  /* padding: 10%; */
-
   background-size: cover;
 }
 

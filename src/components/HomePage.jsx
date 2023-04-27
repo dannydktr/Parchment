@@ -14,6 +14,7 @@ import ImageEditPage from "./ImageEditPage"
 import { storage } from "./config.jsx";
 import { ref as storageRef, uploadBytes, listAll, getDownloadURL, deleteObject, updateMetadata, uploadBytesResumable, getMetadata } from "firebase/storage";
 
+import books from "../images/books.png"
 
 export default function HomePage(props) {
   // ----------------------------------------------------------------------
@@ -129,6 +130,9 @@ export default function HomePage(props) {
 
   // filters the display to show the search results
   const handleSearch = () => {
+    setIsImageEditing(false);
+    setMapEditingState(false);
+    setEditingState(false);
     setSearchResults([]);
     setImageSearchResults([]);
     // checks the image list first
@@ -165,6 +169,9 @@ export default function HomePage(props) {
 
   // filters the display to show the notes with the tag that the user clicked on
   const handleTag = (tag) => {
+    setEditingState(false);
+    setMapEditingState(false);
+    setIsImageEditing(false);
     setIsTagSearch(true);
     setImageSearchResults([])
     setSearchResults([]);
@@ -246,14 +253,13 @@ export default function HomePage(props) {
 
   // is passed to MapNote as argument to delete the image from database
   const deleteImage = (url) => {
+    setIsImageEditing(false);
     const imageRef = storageRef(storage, url);
     deleteObject(imageRef).then(() => {
       alert("Image Deleted");
     })
     setImageList(imageList.filter(item => item !== url));
   }
-
-
 
   // ----------------------------------------------------------------------
   // DISPLAYED ON WEBSITE
@@ -314,7 +320,7 @@ export default function HomePage(props) {
         {/* ------------------------------------------------------------------- */}
         {/* List of Notes */}
         <div className="note_list box">
-          <div>
+          <div className="center_box">
             {/* Show the notes if person is not currently editing the notes */}
 
             {!isEditing && !isMapEditing && !isImageEditing ? (
@@ -323,9 +329,12 @@ export default function HomePage(props) {
                 {!isSearching ? (
                   <>
                     <div className="home_box">
-                      <h3>
+                      <h2>
                         All Notes
-                      </h3>
+                      </h2>
+                      {/* <div className="info_prop">
+                        <img className="page_doll" src={books} />
+                      </div> */}
                     </div>
 
                     {imageList.map((url) => (
@@ -359,7 +368,7 @@ export default function HomePage(props) {
                   (
                     <>
                       <div className="home_box">
-                        <h3>
+                        <h2>
                           {isTagSearch ? (
                             <>
                             {tagSearched}
@@ -369,8 +378,7 @@ export default function HomePage(props) {
                             Search Results for '{search}'
                             </>
                           )}
-                          
-                        </h3>
+                        </h2>
                       </div>
 
                       {/* displays the searched image notes */}

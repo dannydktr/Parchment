@@ -3,6 +3,9 @@ import { storage } from "./config.jsx";
 import { ref as storageRef, uploadBytes, listAll, getDownloadURL, deleteObject, updateMetadata, uploadBytesResumable, getMetadata } from "firebase/storage";
 import SettingList from "./SettingList.jsx";
 
+// Icons & images
+import note_edit from "../images/note_edit.svg";
+import trash from "../images/trash.svg";
 
 function ImageNote(props) {
 	const edit_funct = props.edit_funct;
@@ -23,7 +26,7 @@ function ImageNote(props) {
 			alert(error);
 		})
 	}, []);
-	
+
 
 	return (
 		<>
@@ -32,9 +35,10 @@ function ImageNote(props) {
 					<div className="title">
 						{title}
 					</div>
-					{/* <button className="save_btn" onClick={edit_funct}>
-						Edit
-					</button> */}
+					<button className="save_btn img_btn"
+						onClick={props.edit_funct} title="Edit Note">
+						<img className="btn_img" src={note_edit} alt="Note editing icon." />
+					</button>
 				</div>
 
 				<div className="body_section">
@@ -45,16 +49,14 @@ function ImageNote(props) {
 				</div>
 
 				<div className="body_section">
-					<button className="setting_btn"
+					{/* <button className="setting_btn"
 					onClick={toggleSetting}
 					>
 						Settings
-					</button>
+					</button> */}
 
-					<button className="trash_btn"
-						onClick={() => props.deleteImage(props.src)}
-					>
-						Trash
+					<button className="small_img_btn" onClick={() => props.deleteImage(props.src)}>
+						<img className="btn_img" src={trash} alt="Trash icon." title="Delete Note" />
 					</button>
 				</div>
 
@@ -69,7 +71,7 @@ function ImageNote(props) {
 					</>
 
 				}
-			</div>
+			</div >
 		</>
 	);
 }

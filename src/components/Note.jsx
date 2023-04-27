@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SettingList from "./SettingList";
-import { set, ref, onValue, remove } from "firebase/database";
+import { ref, remove } from "firebase/database";
 import { auth, database } from "./config.jsx";
+
+// Icons & images
+import note_edit from "../images/note_edit.svg";
+import trash from "../images/trash.svg";
 
 function Note(props) {
 
@@ -24,7 +28,7 @@ function Note(props) {
 
   // Deletes the note; probably add an alert before completely deleting note
   const handleDelete = (uid) => {
-    // implement once database is running
+    setEditingState(false);
     remove(ref(database, `/${auth.currentUser.uid}/${uid}`));
   };
 
@@ -44,9 +48,10 @@ function Note(props) {
           <div className="title">
             {props.note_info.title}
           </div>
-          {/* <button className="save_btn" onClick={props.edit_funct}>
-            Edit
-          </button> */}
+          <button className="save_btn img_btn"
+						onClick={props.edit_funct} title="Edit Note">
+						<img className="btn_img" src={note_edit} alt="Note editing icon."/>
+					</button>
         </div>
 
         <div className="body_section">
@@ -55,12 +60,12 @@ function Note(props) {
         </div>
 
         <div className="body_section">
-          <button className="setting_btn" onClick={toggleSetting}>
+          {/* <button className="setting_btn" onClick={toggleSetting}>
             Settings
-          </button>
+          </button> */}
 
-          <button className="trash_btn" onClick={() => handleDelete(props.note_info.cur_uid)}>
-            Trash
+          <button className="small_img_btn" onClick={() => handleDelete(props.note_info.cur_uid)}>
+            <img className="btn_img" src={trash} alt="Trash icon." title="Delete Note"/>
           </button>
         </div>
 
